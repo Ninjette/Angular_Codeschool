@@ -1,0 +1,57 @@
+<html ng-app="app">
+    <head>
+        <title>Promise fun</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+    </head>
+    <body ng-app="app">
+    	<div ng-controller="theController">
+    	{{myValue}}
+		<hr>
+		<br>
+		{{step}}
+    	</div>
+    </body>
+</html>
+
+<script>
+	var app = angular.module('app',[]);
+	app.controller('theController', ["$scope", "$q", function($scope, $q){
+		$scope.addOne = function(num){
+			var q = $q.defer();
+			$scope.step++;
+			if (angular.isNumber(num)) {
+				setTimeout(function(){q.resolve(num+1)},1000)
+			}
+			else{
+				q.reject('NaN');
+			}
+			return q.promise;
+		};
+		$scope.step = 0;
+		$scope.myValue = 0;
+		$scope.promise = $scope.addOne($scope.myValue);
+
+		$scope.promise
+		.then(function(v){
+			return $scope.addOne(v)
+		})
+		.then(function(v){
+			return $scope.addOne(v)
+		})
+		.then(function(v){
+			return $scope.addOne(v)
+		})
+		.then(function(v){
+			return $scope.addOne(v)
+		})
+		.then(
+			function(v){
+				$scope.myValue = v;
+			},
+			function(err){
+				$scope.myValue = err;
+			}
+		)
+	}]);
+
+</script>

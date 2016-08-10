@@ -1,0 +1,75 @@
+[
+	{
+		"name": "Dodecahedron",
+		"price": 2.95,
+		"description": "description number 1",
+		"reviews":[
+			{
+				"stars": 5,
+				"body": "I love this product",
+				"author": "ivan@mail.ru"
+			},
+			{
+				"stars": 4,
+				"body": "I alsmost love this product",
+				"author": "katya@mail.ru"
+			}
+		],
+		"images": [
+			{
+				"full": "images/gallery/79.jpg",
+				"thumb": "images/gallery/small_79.jpg"
+			},
+			{
+				"full": "images/gallery/80.jpg",
+				"thumb": "images/gallery/small_80.jpg"
+			},
+			{
+				"full": "images/gallery/81.jpg",
+				"thumb": "images/gallery/small_81.jpg"
+			},
+			{
+				"full": "images/gallery/82.jpg",
+				"thumb": "images/gallery/small_82.jpg"
+			},
+			{
+				"full": "images/gallery/83.jpg",
+				"thumb": "images/gallery/small_83.jpg"
+			}
+		]
+	},
+	{
+		"name": "Another gem",
+		"price": 2.95,
+		"description": "description number 2",
+		"reviews":[
+			{
+				"stars": 5,
+				"body": "I love this product",
+				"author": "ivan@mail.ru"
+			}
+		],
+		"images": [
+			{
+				"full": "images/gallery/79.jpg",
+				"thumb": "images/gallery/small_79.jpg"
+			},
+			{
+				"full": "images/gallery/80.jpg",
+				"thumb": "images/gallery/small_80.jpg"
+			},
+			{
+				"full": "images/gallery/81.jpg",
+				"thumb": "images/gallery/small_81.jpg"
+			},
+			{
+				"full": "images/gallery/82.jpg",
+				"thumb": "images/gallery/small_82.jpg"
+			},
+			{
+				"full": "images/gallery/83.jpg",
+				"thumb": "images/gallery/small_83.jpg"
+			}
+		]
+	}
+]
